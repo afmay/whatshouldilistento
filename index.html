@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  <!-- Head of page, includes logo and tabs for website. -->
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a spotify recommendation website"> <!--description for search engines-->
+        <meta name="author" content="Austyn" >
+        <meta name="keywords" content="Spotify, Music, Recommendation" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Austyn's Spotify Website</title> 
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="tab.css">
+        <script src="https://kit.fontawesome.com/b43ae2a0c4.js" crossorigin="anonymous"></script>
+        <script src="/tabs.js"></script>
+        <div class="container">
+            <img src="images/websitelogowhite.png" class="logo" style="width:512px;height:288px;">   <!-- logo -->
+        </div>
+
+        <div class="header-text">
+            
+        </div>
+    </head>
+    <body>
+        <div class= "tabs"> <!-- interactive tabs -->
+            <div class="tab-btns">
+                <button id="btn1" onclick="openFeatures()">Features</button>
+                <button id="btn2" onclick="openFAQ()">FAQ</button>
+                <button id="btn3" onclick="openSpotify()"><i class="fa fa-spotify"></i> Connect with Spotify</button>
+            </div>
+            <div id="content1" class="content">
+                <div class="content-left">
+                    <h1>Features Info Here</h1>
+                    <p>
+                        Features paragraph Here.
+                    </p>
+                </div>
+                <div class="content-right">
+                    <img src="images/synth.png">
+                </div>
+            </div>
+            <div id="content2" class="content">
+                <div class="content-left">
+                    <h1>FAQ Info Here</h1>
+                    <p>
+                        FAQ paragraph Here.
+                    </p>
+                </div>
+                <div class="content-right">
+                    <img src="images/synth.png">
+                </div>
+            </div>
+            <div id="content3" class="content">
+                <div class="content-left">
+                    <h1>FAQ Info Here</h1>
+                    <p>
+                        FAQ paragraph Here.
+                    </p>
+                </div>
+                <div class="content-right">
+                    <img src="images/synth.png">
+                </div>
+            </div>
+            
+        </div>
+
+        <script>
+            var content1 = document.getElementById("content1");
+            var content2 = document.getElementById("content2");
+            var content3 = document.getElementById("content3");
+            var btn1 = document.getElementById("btn1");
+            var btn2 = document.getElementById("btn2");
+            var btn3 = document.getElementById("btn3");
+
+            function openFeatures(){
+                content1.style.transform = "translateX(0)";
+                content2.style.transform = "translateX(5000px)";
+                content3.style.transform = "translateX(5000px)";
+                btn1.style.color = "#00B7EB"
+                btn2.style.color = "#000"
+                btn3.style.color = "#000"
+                content1.style.transitionDelay = "0.3s";
+                content2.style.transitionDelay = "0";
+                content3.style.transitionDelay = "0";
+            }
+            function openFAQ(){
+                content1.style.transform = "translateX(100%)";
+                content2.style.transform = "translateX(0)";
+                content3.style.transform = "translateX(100%)";
+                btn2.style.color = "#00B7EB"
+                btn1.style.color = "#000"
+                btn3.style.color = "#000"
+                content1.style.transitionDelay = "0";
+                content2.style.transitionDelay = "0.3s";
+                content3.style.transitionDelay = "0";
+            }
+            function openSpotify(){
+                content1.style.transform = "translateX(100%)";
+                content2.style.transform = "translateX(100%)";
+                content3.style.transform = "translateX(0)";
+                btn3.style.color = "#00B7EB"
+                btn2.style.color = "#000"
+                btn1.style.color = "#000"
+                content1.style.transitionDelay = "0";
+                content2.style.transitionDelay = "0";
+                content3.style.transitionDelay = "0.3s";
+            }
+        </script>
+
+    </body>
+</html>
