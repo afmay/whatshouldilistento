@@ -4,7 +4,7 @@ const app = new Vue({
       return {
         client_id: 'b9b1bc33ef1746b0b394e0333f15f036',
         scopes: 'user-top-read',
-        redirect_uri: 'http://whatdoilistento.com/',
+        redirect_uri: 'https://whatdoilistento.com/',
         me: null
       }
     },
