@@ -9,8 +9,9 @@
         <title>What Should I Listen To?</title> 
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="tab.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <script src="https://kit.fontawesome.com/b43ae2a0c4.js" crossorigin="anonymous"></script>
-        <script src="/index.js"></script>
+
         <div class="container">
             <img src="images/websitelogowhite.png" class="logo" style="width:512px;height:288px;">   <!-- logo -->
         </div>
@@ -50,8 +51,8 @@
             </div>
             <div id="content3" class="content">
                 <div class="content-left">
-                    <div id="app">
-                          <button @click="login">Login with Spotify</button>
+                    <div id = "app">
+                        <button @click="login">Login with Spotify</button>
                     </div>
                 </div>
                 <div class="content-right">
@@ -105,4 +106,5 @@
         </script>
 
     </body>
+    <script src="index.js"></script>
 </html>

@@ -4,7 +4,7 @@ const app = new Vue({
       return {
         client_id: 'b9b1bc33ef1746b0b394e0333f15f036',
         scopes: 'user-top-read',
-        redirect_uri: 'https://s.codepen.io/leemartin/debug/ffc5867e9dd2a8119bdf9c7735e021cc',
+        redirect_uri: 'http://whatdoilistento.com/',
         me: null
       }
     },
@@ -17,7 +17,7 @@ const app = new Vue({
           
           popup.close()
           
-          fetch('https://api.spotify.com/v1/me', {
+          fetch('https://api.spotify.com/v1/me/top', {
             headers: {
               'Authorization': `Bearer ${payload}`
             }
@@ -36,7 +36,7 @@ const app = new Vue({
         // alert(this.token)
         
         window.opener.spotifyCallback(this.token)
-      }
+        }
     }
-  })
+})
   
